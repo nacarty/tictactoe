@@ -1,0 +1,68 @@
+<!doctype html>	 
+<html lang="en"> 
+<head> 
+	<meta charset="utf-8"> 
+	<title>Tic Tac Toe</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<script src="main.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="main.css">  
+
+	<script type="text/javascript"> 
+            window.addEventListener('load', function(){
+                generateNewBoard(3);
+                sound1 = document.getElementById('sound1');
+                sound1.load();
+                sound2 = document.getElementById('sound2');
+                sound2.load();
+                sound3 = document.getElementById('sound3');
+                sound3.load();
+            }, false); 
+ 	</script> 
+ </head> 
+
+ <body> 
+    <div id='gameFace'>
+     <div id='userInfo'>
+         <p id="para">&nbsp;Settings&nbsp;&nbsp;</p>
+         <span id = 'choice'>Token:<select  name='Token' title="Choose 'X' or 'O'"  onchange='setUserPreference(this.value)'>
+             <option value = 'O'>O</option>
+             <option value = 'X'>X</option>
+         </select></span>
+         <span id = 'boardSize' >&nbsp;Size:<select name='Size' title="Choose board size"  onchange='generateNewBoard(this.value)'>
+             <option value = '3'>3</option>
+             <option value = '4'>4</option>
+             <option value = '5'>5</option>
+             <option value = '6'>6</option>
+             <option value = '7'>7</option>
+             <option value = '8'>8</option>
+             </select></span>
+     </div>     
+     <div id='scoreCard'>
+         <p id='heading'>SCORECARD</p>
+         <p>YOU(<span id = 'humanSymbol'>O</span>):<span  id='human'>0</span></p>
+         <p>Machine(<span id = 'computerSymbol'>X</span>):<span id='computer'>0</span></p>
+         <p>Draw:<span id='draws' >0</span></p>
+         <div id="divider"></div>
+         <p>Empty:<span id='fills' >9</span></p>
+         <p>Mode : <span id='mode' >MiniMax</span></p>
+     </div>
+     <div id='board'>
+         
+         //The dynamic HTML content goes here..
+         
+     </div>
+    </div>
+     <audio id="sound1" controls preload="auto">
+         <source src="gameSound1.mp3" type="audio/mpeg">
+               Your browser does not support the audio element.
+     </audio>
+     <audio id="sound2" controls preload="auto">
+     <source src="gameSound3.mp3" type="audio/mpeg">
+               Your browser does not support the audio element.
+     </audio>
+        <audio id="sound3" controls preload="auto">
+         <source src="gameSoundEnd.mp3" type="audio/mpeg">
+               Your browser does not support the audio element.
+     </audio>
+ </body> 
+ </html> 

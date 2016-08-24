@@ -1,0 +1,145 @@
+#gameFace{
+    width:500px;
+    margin:20px auto auto;
+    /*box-shadow: 5px 8px 20px 1px rgba(0, 0, 0, 0.5), inset -1px -4px 8px 0.1px #777777; */
+}
+#board{
+    width:310px;
+    height:310px;
+    padding:0px !important;
+    margin:0 !important; 
+    vertical-align: middle;
+    box-align:top;
+    -moz-box-align:top;
+    -webkit-box-align:top;
+    -ms-box-align:top;
+   /* box-shadow: 5px 8px 20px 1px rgba(0, 0, 0, 0.5), inset -1px -4px 8px 0.1px #777777; */
+}
+.button{
+    width:100px;
+    height:100px;
+    color:blue;
+    font-size: 35px;
+    font-weight: bold;
+    text-align:center;
+    vertical-align: middle;
+    margin:-1px;
+    background-color:buttonface;
+    border:solid blue 1px;
+    padding:0;
+    float:left;     
+    display:flex;
+    align-items: center;
+    /*display:inline-block;   
+    display:inline-block;
+    box-shadow: 5px 8px 20px 1px rgba(0, 0, 0, 0.5), inset -1px -4px 8px 0.1px #777777; */
+}
+.topLeft{
+    border-top-left-radius: 8px;
+}
+.topRight{
+    border-top-right-radius: 8px;
+}
+.bottomLeft{
+    border-bottom-left-radius: 8px;
+}
+.bottomRight{
+    border-bottom-right-radius: 8px;
+}
+.button span{
+    margin: auto;
+}
+.winner{
+    font-size:50px;
+    border-radius:100%;
+    background-color:red;
+}
+#userInfo{
+    width:305px;
+    display: inline-block;
+    font-size: 25px;
+    color:white;
+    padding:0 !important;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+    background-color: blue;
+    /*box-shadow: 5px 8px 20px 1px rgba(0, 0, 0, 0.5), inset -1px -4px 8px 0.1px #777777; */
+}
+#boardSize, #choice, select{
+    width:46px;    
+    margin:0;
+    text-align: right;
+    font-size: 20px;
+    padding:0;
+    height:100%;
+    background-color:blue;
+    color:white;
+    border:0;
+    border-radius: 8px;
+    margin:auto;
+}
+select{
+    width:40px;
+    text-align: right;
+}
+option{
+    text-align: right;
+}
+#para{
+    text-align: left;
+    margin:0 auto;
+    float:left;
+    padding:0;
+    height:100%;
+}
+
+#scoreCard{
+    width:160px;
+    float: right;
+    background-color: buttonface;
+    font-size: 20px;
+    padding:7px;
+    padding-top:0;
+    border-radius:8px;
+    color:blue;
+    /*box-shadow: 5px 8px 20px 1px rgba(0, 0, 0, 0.5), inset -1px -4px 8px 0.1px #777777; */
+}
+#heading{
+    text-align: center;
+    font-size: 25px;
+    background-color: blue;
+    margin-top: 0;
+    margin-left:-5px;
+    margin-right:-5px;
+    color:white;
+    width:172px;
+    border-radius:8px;
+    
+}
+
+#computer{
+        margin-left: 20px;
+        font-size: 28px;
+        vertical-align: middle;
+    }
+#human, #draws, #fills{
+    margin-left: 47px;
+    font-size: 28px;
+    vertical-align: middle;
+}
+#draws{
+   margin-left: 73px; 
+}
+#fills{
+    margin-left: 63px;
+}
+#divider{
+    height:1px;
+    background-color: blue;
+    margin-right:20px;
+    margin-left: 20px;
+}
+    
+audio{
+    display:none;
+}
